@@ -1,0 +1,47 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '7.4.1' apply false
+    id 'com.android.library' version '7.4.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
+    id 'androidx.navigation.safeargs' version '2.5.3' apply false
+}
+
+ext {
+
+    libraries = [
+            'androidx.core:core-ktx:1.9.0',
+            'androidx.appcompat:appcompat:1.6.1',
+            'com.google.android.material:material:1.8.0',
+            'androidx.constraintlayout:constraintlayout:2.1.4',
+            'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1',
+            'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1',
+
+            //Navigation
+            "androidx.navigation:navigation-fragment-ktx:2.5.3",
+            "androidx.navigation:navigation-ui-ktx:2.5.3",
+            "androidx.navigation:navigation-dynamic-features-fragment:2.5.3",
+
+            // Network and Serialization
+            "com.google.code.gson:gson:2.8.9",
+            "com.squareup.okhttp3:logging-interceptor:4.8.1",
+            "com.squareup.retrofit2:retrofit:2.9.0",
+            "com.squareup.retrofit2:converter-gson:2.9.0",
+            "com.squareup.retrofit2:adapter-rxjava2:2.9.0",
+
+            // Rx
+            "io.reactivex.rxjava2:rxjava:2.2.13",
+            "io.reactivex.rxjava2:rxandroid:2.1.1",
+
+            // DI: Koin
+            "io.insert-koin:koin-android:3.3.2",
+    ]
+
+    testLibraries = [
+            'junit:junit:4.13.2'
+    ]
+
+    androidTestLibraries = [
+            'androidx.test.ext:junit:1.1.5',
+            'androidx.test.espresso:espresso-core:3.5.1'
+    ]
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Todo</string>
+    <string name="txt_buy_list">Buy List</string>
+    <string name="txt_call_list">Call List</string>
+    <string name="txt_sell_list">Sell List</string>
+    <string name="txt_error">Error</string>
+    <string name="txt_dismiss">Dismiss</string>
+</resources>
